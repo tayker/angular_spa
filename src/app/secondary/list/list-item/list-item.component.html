@@ -1,0 +1,22 @@
+<li [ngClass]="listClass"
+    appHovered>
+  <div class="icon" *ngIf="item.icon !== undefined">
+    <img src="{{item.icon}}" alt="">
+    <div class="media"></div>
+  </div>
+  <div class="percent-rounder" *ngIf="item.percent !== undefined">
+    {{item.percent}}%
+  </div>
+  <h3 class="title title--third" *ngIf="item.title !== undefined">
+    {{item.title}}
+  </h3>
+  <div class="subtitle" *ngIf="item.subtitle !== undefined">
+    {{item.subtitle}}
+  </div>
+  <div class="text-description" *ngIf="item.description !== undefined">
+    {{item.description}}
+  </div>
+  <a href="" class="link" *ngIf="item.link_title !== undefined">
+    {{item.link_title}}
+  </a>
+</li>

@@ -1,0 +1,12 @@
+.background-img{
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+}
+.background-img--horizontal{
+  z-index: 2;
+  right: 100px;
+}
+.background-img--vertical{
+  bottom: -120px;
+}

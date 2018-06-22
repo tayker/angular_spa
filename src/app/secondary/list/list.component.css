@@ -1,0 +1,16 @@
+.list-main{
+  display: flex;
+  justify-content: space-between;
+}.list-features{
+   flex-direction: column;
+   margin-top: 60px;
+ }
+ .list-markers{
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 40px;
+ }
+.list-skills{
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,800');
+*{
+  box-sizing: border-box;
+}
+body, html{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Raleway', sans-serif;
+}
+.container{
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 15px;
+  position: relative;
+}
+.title{
+  font-size: 60px;
+  margin: 0;
+  color: #383838;
+  text-transform: uppercase;
+  text-align: center;
+}
+.title--secondary{
+  font-size: 40px;
+  margin: 60px 0 0 0;
+}
+.title--third{
+  font-size: 22px;
+}
+.subtitle{
+  text-align: center;
+  color: #666;
+}
+.highlight{
+  color: #ff4c4c;
+}
+button{
+  cursor: pointer;
+}
+ul{
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.link{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.section--darktheme{
+  background-color: #383838;
+}
+.section--darktheme .title{
+  color: #fff;
+}

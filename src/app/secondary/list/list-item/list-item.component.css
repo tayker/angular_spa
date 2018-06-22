@@ -1,0 +1,160 @@
+.list-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 360px;
+}
+.list-main .icon{
+  background-color: #383838;
+  align-self: center;
+  padding: 15px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: background-color .3s;
+  -moz-transition: background-color .3s;
+  -ms-transition: background-color .3s;
+  -o-transition: background-color .3s;
+  transition: background-color .3s;
+}
+img{
+  max-width: 60px;
+}
+.list-main .title--third{
+  color: rgb(96, 96, 96);
+  font-weight: bold;
+  margin: 20px 0 12px 0;
+}
+.text-description{
+  font-size: 16px;
+  color: rgb(122, 122, 122);
+  line-height: 1.714;
+}
+.list-main .link{
+  color: rgb(122, 122, 122);
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid rgb(122,122,122);
+  border-radius: 5px;
+  margin-top: 20px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+.list-main.hovered .link{
+  background-color: #ff4c4c;
+  color: #fff;
+  border-color: #ff4c4c;
+}
+.list-main.hovered .icon{
+  background-color: #c4dff6;
+}
+
+.list-features{
+  text-align: left;
+  max-width: 500px;
+  position: relative;
+  padding-left: 100px;
+  margin-bottom: 60px;
+}
+.list-features .title{
+  text-align: left;
+  margin-bottom: 10px;
+}
+.list-features .icon{
+  position: absolute;
+  left: 0;
+}
+.list-markers{
+  display: flex;
+  flex-direction: column;
+  max-width: 372px;
+  margin-top: 20px;
+  padding-left: 80px;
+  position: relative;
+}
+.list-markers .title--third{
+  text-align: left;
+  font-size: 18px;
+}
+.list-markers .subtitle{
+  text-align: left;
+  margin: 6px 0 18px 0;
+}
+.list-markers .icon{
+  position: absolute;
+  left: 0;
+  background-color: #383838;
+  padding: 15px 10px;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  -webkit-transition: background-color .3s;
+  -moz-transition: background-color .3s;
+  -ms-transition: background-color .3s;
+  -o-transition: background-color .3s;
+  transition: background-color .3s;
+}
+.list-markers .icon:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(100%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 30px 0 30px;
+  border-color: #383838 transparent transparent transparent;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+
+}
+.list-markers .media:before, .list-markers .media:after{
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  top: 100%;
+  background-color: #fff;
+  z-index: 2;
+}
+.list-markers .media:before{
+  left: calc(50% - 6px);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.list-markers .media:after{
+  right: calc(50% - 6px);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.list-markers .icon img{
+  max-width: 40px;
+}
+.list-markers.hovered .icon{
+  background-color: #c4dff6;
+}
+.list-markers.hovered .icon:before{
+  border-color: #c4dff6 transparent transparent transparent;
+}
+.list-skills .title{
+  font-size: 16px;
+  color: #383838;
+  color: rgb(138, 138, 138);
+}
+.list-skills .percent-rounder{
+  font-size: 52px;
+  color: #fff;
+  text-align: center;
+}

@@ -1,0 +1,20 @@
+<main class="section-main">
+  <div class="nav-wrapper">
+    <div class="wrapper">
+      <div class="logo">
+        <img src="http://via.placeholder.com/150x60" alt="logo" title="logo">
+      </div>
+      <app-nav [navList]="navList"></app-nav>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 class="title title--secondary">
+      what we <span class="highlight">offer</span>
+    </h2>
+    <div class="subtitle subtitle--secondary">
+      We offer our customers the best services & solutions, this is our main services list
+    </div>
+    <app-list [list]="list" [listClass]="'list-main'"></app-list>
+  </div>
+</main>
