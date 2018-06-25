@@ -47,6 +47,20 @@ export class ListService {
     { percent: 50, title: 'advertisement' }
   ];
 
+  worksList = [
+    { icons: [{ icon1: '../../assets/img/clip.svg' }, { icon2: '../../assets/img/search.svg' }, { icon3: '../../assets/img/like.svg' }], title: 'Corporate Brochure', description: 'Illustrator/Print', likescount: 136 },
+    { icons: [{ icon1: '../../assets/img/clip.svg' }, { icon2: '../../assets/img/search.svg' }, { icon3: '../../assets/img/like.svg' }], title: 'Market', description: 'WEB', likescount: 12 },
+    { icons: [{ icon1: '../../assets/img/clip.svg' }, { icon2: '../../assets/img/search.svg' }, { icon3: '../../assets/img/like.svg' }], title: 'Social Network', description: 'WEB/Photoshop', likescount: 244 },
+    { icons: [{ icon1: '../../assets/img/clip.svg' }, { icon2: '../../assets/img/search.svg' }, { icon3: '../../assets/img/like.svg' }], title: 'Analytics Center', description: 'SEO', likescount: 132 },
+    { icons: [{ icon1: '../../assets/img/clip.svg' }, { icon2: '../../assets/img/search.svg' }, { icon3: '../../assets/img/like.svg' }], title: 'Online Shop', description: 'WEB(Back-end)', likescount: 113 },
+    { icons: [{ icon1: '../../assets/img/clip.svg' }, { icon2: '../../assets/img/search.svg' }, { icon3: '../../assets/img/like.svg' }], title: 'Corporate Brochure', description: 'Illustrator/Print', likescount: 136 },
+    { icons: [{ icon1: '../../assets/img/clip.svg' }, { icon2: '../../assets/img/search.svg' }, { icon3: '../../assets/img/like.svg' }], title: 'Market', description: 'WEB', likescount: 12 },
+    { icons: [{ icon1: '../../assets/img/clip.svg' }, { icon2: '../../assets/img/search.svg' }, { icon3: '../../assets/img/like.svg' }], title: 'Social Network', description: 'WEB/Photoshop', likescount: 244 },
+    { icons: [{ icon1: '../../assets/img/clip.svg' }, { icon2: '../../assets/img/search.svg' }, { icon3: '../../assets/img/like.svg' }], title: 'Analytics Center', description: 'SEO', likescount: 132 },
+    { icons: [{ icon1: '../../assets/img/clip.svg' }, { icon2: '../../assets/img/search.svg' }, { icon3: '../../assets/img/like.svg' }], title: 'Online Shop', description: 'WEB(Back-end)', likescount: 113 },
+    { icons: [{ icon1: '../../assets/img/clip.svg' }, { icon2: '../../assets/img/search.svg' }, { icon3: '../../assets/img/like.svg' }], title: 'Online Shop', description: 'WEB(Back-end)', likescount: 113 },
+    { icons: [{ icon1: '../../assets/img/clip.svg' }, { icon2: '../../assets/img/search.svg' }, { icon3: '../../assets/img/like.svg' }], title: 'Online Shop', description: 'WEB(Back-end)', likescount: 113 }
+  ];
   getOfferList(){
     return this.offerList;
   }
@@ -62,7 +76,12 @@ export class ListService {
   getMarkerList(){
     return this.markerList;
   }
+
   getSlillsList(){
     return this.skillsList;
+  }
+
+  getWorksList(){
+    return this.worksList;
   }
 }

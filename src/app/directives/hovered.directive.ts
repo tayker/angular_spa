@@ -7,11 +7,9 @@ export class HoveredDirective {
   constructor(private elRef: ElementRef) { }
 
   @HostListener('mouseenter') onMouseEnter(){
-      console.log(this.elRef.nativeElement.classList.add('hovered'))
+      this.elRef.nativeElement.classList.add('hovered');
   }
   @HostListener('mouseleave') onMouseLeave(){
-    console.log(this.elRef.nativeElement.classList.remove('hovered'))
+    this.elRef.nativeElement.classList.remove('hovered');
   }
-
-
 }

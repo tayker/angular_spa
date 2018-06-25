@@ -4,6 +4,10 @@
     <img src="{{item.icon}}" alt="">
     <div class="media"></div>
   </div>
+    <div class="icons" *ngIf="item.icons !== undefined">
+      <div class="image-wrapper"><img src="{{item.icons[0].icon1}}" alt=""></div>
+      <div class="image-wrapper"><img src="{{item.icons[1].icon2}}" alt=""></div>
+    </div>
   <div class="percent-rounder" *ngIf="item.percent !== undefined">
     {{item.percent}}%
   </div>
@@ -19,4 +23,7 @@
   <a href="" class="link" *ngIf="item.link_title !== undefined">
     {{item.link_title}}
   </a>
+  <div class="likes" *ngIf="item.likescount !== undefined">
+    <img src="{{item.icons[2].icon3}}" alt="">{{item.likescount}}
+  </div>
 </li>

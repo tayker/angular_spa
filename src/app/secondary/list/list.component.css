@@ -14,3 +14,8 @@
   display: flex;
   justify-content: space-between;
 }
+.list-works{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
