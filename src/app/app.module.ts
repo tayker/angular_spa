@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { CarouselModule } from 'angular2-carousel';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './secondary/nav/nav.component';
@@ -43,7 +43,8 @@ import { SectionMarkersComponent } from './section-markers/section-markers.compo
     SectionMarkersComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CarouselModule
   ],
   providers: [ListService],
   bootstrap: [AppComponent]

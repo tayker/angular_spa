@@ -19,3 +19,11 @@
   display: flex;
   flex-wrap: wrap;
 }
+.list-facts{
+  display: flex;
+  justify-content: space-between;
+}
+.list-members{
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,3 +1,26 @@
-<p>
-  section-facts works!
-</p>
+<section class="section section-facts section--darktheme">
+  <div class="container">
+    <h2 class="title title--secondary">
+      company <span class="highlight">facts</span>
+    </h2>
+    <div class="subtitle subtitle--secondary">
+      We do love to work and increase our counter numbers, this is what we've done till now.
+    </div>
+    <app-list [list]="list" [listClass]="'list-facts'"></app-list>
+  </div>
+  <div class="additionally">
+    <div class="container">
+      <h3 class="title title--third">
+        are you satisfied with unlimited features that we offer?
+      </h3>
+      <div class="btns-wrapper">
+        <button class="button">
+          purchase it now
+        </button>
+        <button class="button">
+          contact us now
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

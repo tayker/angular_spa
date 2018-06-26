@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ListService } from "../list/list.service";
+
 @Component({
   selector: 'app-section-quote',
   templateUrl: './section-quote.component.html',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SectionQuoteComponent implements OnInit {
 
-  constructor() { }
+  list: {};
+  constructor(private listService: ListService) {
+    this.list = this.listService.getQuotesList();
+  }
 
   ngOnInit() {
   }

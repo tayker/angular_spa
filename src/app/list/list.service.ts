@@ -61,6 +61,61 @@ export class ListService {
     { icons: [{ icon1: '../../assets/img/clip.svg' }, { icon2: '../../assets/img/search.svg' }, { icon3: '../../assets/img/like.svg' }], title: 'Online Shop', description: 'WEB(Back-end)', likescount: 113 },
     { icons: [{ icon1: '../../assets/img/clip.svg' }, { icon2: '../../assets/img/search.svg' }, { icon3: '../../assets/img/like.svg' }], title: 'Online Shop', description: 'WEB(Back-end)', likescount: 113 }
   ];
+
+  factsList = [
+    { transition_icon: '../../assets/img/check-box.svg', title: '218', description: 'completed projects' },
+    { transition_icon: '../../assets/img/hourglass.svg', title: '360', description: 'hours of work/month' },
+    { transition_icon: '../../assets/img/price-ticket.svg', title: '135', description: 'solved tickets' },
+    { transition_icon: '../../assets/img/fingerup.svg', title: '174', description: 'satisfied clients' }
+  ];
+
+  membersList = [
+    { img: 'http://via.placeholder.com/272x272', social: [
+        { icon: '../assets/img/facebook-logo.svg', link: './', link_title: 'facebook' },
+        { icon: '../assets/img/twitter-logo.svg', link: './', link_title: 'twitter' },
+        { icon: '../assets/img/google-plus-logo.svg', link: './', link_title: 'google' },
+        { icon: '../assets/img/vimeo-logo.svg', link: './', link_title: 'vimeo' },
+        { icon: '../assets/img/dribble-logo.svg', link: './', link_title: 'dribble' }
+      ],
+      button_title: 'alexis_simpson', title: 'CEO & Developer',
+      contacts: [{ email: 'a.simpson@unique.com'}, { phone: '38(066)22-32-314' }]},
+    { img: 'http://via.placeholder.com/272x272', social: [
+        { icon: '../assets/img/facebook-logo.svg', link: './', link_title: '' },
+        { icon: '../assets/img/twitter-logo.svg', link: './', link_title: '' },
+        { icon: '../assets/img/google-plus-logo.svg', link: './', link_title: '' },
+        { icon: '../assets/img/vimeo-logo.svg', link: './', link_title: '' },
+        { icon: '../assets/img/dribble-logo.svg', link: './', link_title: '' }
+      ],
+      button_title: 'alexis_simpson', title: 'CEO & Developer',
+      contacts: [{ email: 'a.simpson@unique.com'}, { phone: '38(066)22-32-314' }]},
+    { img: 'http://via.placeholder.com/272x272', social: [
+        { icon: '../assets/img/facebook-logo.svg', link: './', link_title: '' },
+        { icon: '../assets/img/twitter-logo.svg', link: './', link_title: '' },
+        { icon: '../assets/img/google-plus-logo.svg', link: './', link_title: '' },
+        { icon: '../assets/img/vimeo-logo.svg', link: './', link_title: '' },
+        { icon: '../assets/img/dribble-logo.svg', link: './', link_title: '' }
+      ],
+      button_title: 'alexis_simpson', title: 'CEO & Developer',
+      contacts: [{ email: 'a.simpson@unique.com'}, { phone: '38(066)22-32-314' }]},
+    { img: 'http://via.placeholder.com/272x272', social: [
+        { icon: '../assets/img/facebook-logo.svg', link: './', link_title: '' },
+        { icon: '../assets/img/twitter-logo.svg', link: './', link_title: '' },
+        { icon: '../assets/img/google-plus-logo.svg', link: './', link_title: '' },
+        { icon: '../assets/img/vimeo-logo.svg', link: './', link_title: '' },
+        { icon: '../assets/img/dribble-logo.svg', link: './', link_title: '' }
+      ],
+      button_title: 'alexis_simpson', title: 'CEO & Developer',
+      contacts: [{ email: 'a.simpson@unique.com'}, { phone: '38(066)22-32-314' }]}
+
+  ];
+
+  quotesList = [
+    { person: { name: 'Alex Simpson', post: 'CEO & Developer'}, description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dicta dolorem eius eligendi enim error esse expedita, explicabo fugiat hic illo itaque nobis quae, quam qui ratione sit? Dolorem, mollitia!', carousel: true },
+    { person: { name: 'Alex Simpson', post: 'CEO & Developer'}, description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dicta dolorem eius eligendi enim error esse expedita, explicabo fugiat hic illo itaque nobis quae, quam qui ratione sit? Dolorem, mollitia!', carousel: true },
+    { person: { name: 'Alex Simpson', post: 'CEO & Developer'}, description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dicta dolorem eius eligendi enim error esse expedita, explicabo fugiat hic illo itaque nobis quae, quam qui ratione sit? Dolorem, mollitia!', carousel: true },
+    { person: { name: 'Alex Simpson', post: 'CEO & Developer'}, description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dicta dolorem eius eligendi enim error esse expedita, explicabo fugiat hic illo itaque nobis quae, quam qui ratione sit? Dolorem, mollitia!', carousel: true }
+    ];
+
   getOfferList(){
     return this.offerList;
   }
@@ -83,5 +138,17 @@ export class ListService {
 
   getWorksList(){
     return this.worksList;
+  }
+
+  getFactsList(){
+    return this.factsList;
+  }
+
+  getMembersList(){
+    return this.membersList;
+  }
+
+  getQuotesList(){
+    return this.quotesList;
   }
 }

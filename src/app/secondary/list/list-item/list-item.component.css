@@ -263,3 +263,220 @@ img{
 .list-works.hovered .icons .image-wrapper:first-child{
   background-color: #00a98f;
 }
+.list-facts :host{
+  width: 25%;
+}
+.list-facts{
+  text-align: center;
+}
+.list-facts .title{
+  font-size: 68px;
+  font-weight: 300;
+  position: relative;
+  display: inline-block;
+}
+.list-facts .text-description{
+  color: rgb(138, 138, 138);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.list-facts .icon img{
+  max-width: 26px;
+
+}
+.list-facts .icon{
+  margin: 10px 0;
+}
+.list-facts .title:before, .list-facts .title:after{
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(45deg) translatey(-50%);
+  -moz-transform: rotate(45deg) translatey(-50%);
+  -ms-transform: rotate(45deg) translatey(-50%);
+  -o-transform: rotate(45deg) translatey(-50%);
+  transform: rotate(45deg) translatey(-50%);
+  -webkit-transition: background-color .3s;
+  -moz-transition: background-color .3s;
+  -ms-transition: background-color .3s;
+  -o-transition: background-color .3s;
+  transition: background-color .3s;
+  background-color: #484848;
+  top: 50%;
+}
+.list-facts .title:before{
+  left: -40px;
+}
+.list-facts .title:after{
+  right: -32px;
+}
+.list-facts.hovered .title:before, .list-facts.hovered .title:after{
+  background-color: #ff4c4c;
+}
+.list-members{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+.list-members .image{
+  position: relative;
+}
+.list-members .image img{
+  max-width: 100%;
+  width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.list-members :host{
+  width: 23%;
+}
+.list-members .social{
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 100px;
+  display: flex;
+}
+.list-members .social a{
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.list-members .social a:hover{
+  background-color: #ff4c4c;
+  -webkit-transition: background-color .3s;
+  -moz-transition: background-color .3s;
+  -ms-transition: background-color .3s;
+  -o-transition: background-color .3s;
+  transition: background-color .3s;
+}
+.list-members .social a:hover img{
+  -ms-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+.list-members .social a img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  -moz-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  -o-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 22px;
+}
+.list-members .button{
+  color: #fff;
+  background-color: #ff4c4c;
+  padding: 10px 20px;
+  font-family: inherit;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  max-width: 160px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 250px;
+  -webkit-transition: background-color .2s;
+  -moz-transition: background-color .2s;
+  -ms-transition: background-color .2s;
+  -o-transition: background-color .2s;
+  transition: background-color .2s;
+}
+.list-members .title{
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+.list-members .contacts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list-members .contacts a{
+  color: #999;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: .3s;
+}
+.list-members .contacts .mail:before, .list-members .contacts .phone:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.list-members .contacts .mail:before{
+  background-image: url('/../assets/img/envelope.svg');
+}
+.list-members .contacts .phone:before{
+  background-image: url('/../assets/img/phone.svg');
+}
+.list-members .contacts a:hover{
+  color: #ff4c4c;
+}
+.list-members.hovered .button{
+  background-color: #333;
+}
+.list-members .image:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ff4c4c;
+  opacity: 0;
+  -webkit-transition: opacity .2s;
+  -moz-transition: opacity .2s;
+  -ms-transition: opacity .2s;
+  -o-transition: opacity .2s;
+  transition: opacity .2s;
+}
+.list-members.hovered .image:before{
+  opacity: 0.4;
+}
+.list-quotes{
+  text-align: center;
+}
+.list-quotes .person{
+  display: inline-flex;
+  background-color: #e4e4e4;
+  padding: 10px;
+  justify-content: center;
+  border-radius: 5px;
+}
+.list-quotes .person .name{
+  color: #ff4c4c;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.list-quotes .person .post{
+  color: #383838;
+}
+.list-quotes .text-description{
+  color: #fff;
+  font-weight: 300;
+}

@@ -4,12 +4,20 @@
     <img src="{{item.icon}}" alt="">
     <div class="media"></div>
   </div>
-    <div class="icons" *ngIf="item.icons !== undefined">
-      <div class="image-wrapper"><img src="{{item.icons[0].icon1}}" alt=""></div>
-      <div class="image-wrapper"><img src="{{item.icons[1].icon2}}" alt=""></div>
+  <div class="image" *ngIf="item.img !== undefined">
+    <img src="{{item.img}}" alt="">
+  </div>
+    <div class="social" *ngIf="item.social !== undefined">
+      <a *ngFor="let social of item.social" href="{{social.link}}">
+        <img src="{{social.icon}}" alt="{{social.link_title}}">
+      </a>
     </div>
   <div class="percent-rounder" *ngIf="item.percent !== undefined">
     {{item.percent}}%
+  </div>
+  <div class="person" *ngIf="item.person !== undefined">
+    <div class="name">{{item.person.name}}</div>
+    <div class="post">{{item.person.post}}</div>
   </div>
   <h3 class="title title--third" *ngIf="item.title !== undefined">
     {{item.title}}
@@ -17,13 +25,27 @@
   <div class="subtitle" *ngIf="item.subtitle !== undefined">
     {{item.subtitle}}
   </div>
+  <div class="icon" *ngIf="item.transition_icon !== undefined">
+    <img src="{{item.transition_icon}}" alt="">
+  </div>
   <div class="text-description" *ngIf="item.description !== undefined">
     {{item.description}}
   </div>
   <a href="" class="link" *ngIf="item.link_title !== undefined">
     {{item.link_title}}
   </a>
+  <button class="button" *ngIf="item.button_title !== undefined">
+    {{item.button_title}}
+  </button>
   <div class="likes" *ngIf="item.likescount !== undefined">
     <img src="{{item.icons[2].icon3}}" alt="">{{item.likescount}}
+  </div>
+  <div class="contacts" *ngIf="item.contacts !== undefined">
+    <a class="mail" href="mailto:{{item.contacts.email}}" *ngIf="item.contacts[0] !== undefined">
+      {{item.contacts[0].email}}
+    </a>
+    <a class="phone" href="tel:{{item.contacts.phone}}" *ngIf="item.contacts[1] !== undefined">
+      +{{item.contacts[1].phone}}
+    </a>
   </div>
 </li>
